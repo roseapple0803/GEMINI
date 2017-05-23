@@ -1,0 +1,129 @@
+{
+ "name": "GEMINI",
+ "children": [
+  {
+   "name": "Clinical",
+   "children": [
+     
+	
+	{
+"name":"lab.albumin.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.alp.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.alt.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.ast.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.calcium.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.creatinine.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.glucose.fasting.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.glucose.poc.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.glucose.random.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.hgb.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.lactate.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.mcv.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.plt.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.potassium.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.sodium.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.troponin.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"lab.wbc.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"Test.Name","size":1000,"selected":1},{"name":"Test.ID","size":1000,"selected":1},{"name":"Result.Value","size":1000,"selected":1},{"name":"Result.Unit","size":1000,"selected":1},{"name":"Reference.Range","size":1000,"selected":1},{"name":"Collection.DtTm","size":1000,"selected":1},{"name":"Site","size":1000,"selected":1},{"name":"Test.Item","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"medication_sameday.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"pat_num_ord","size":1000,"selected":1},{"name":"pmp","size":1000,"selected":1},{"name":"start_date","size":1000,"selected":1},{"name":"start_time","size":1000,"selected":1},{"name":"stop_date","size":1000,"selected":1},{"name":"stop_time","size":1000,"selected":1},{"name":"drug_code","size":1000,"selected":1},{"name":"generic_name","size":1000,"selected":1},{"name":"ndc","size":1000,"selected":1},{"name":"din","size":1000,"selected":1},{"name":"Hospital_Specific_Drug_Code","size":1000,"selected":1},{"name":"doseAmount","size":1000,"selected":1},{"name":"doseUnit","size":1000,"selected":1},{"name":"route","size":1000,"selected":1},{"name":"ord_frequency","size":1000,"selected":1},{"name":"component_type","size":1000,"selected":1},{"name":"Addl_sig","size":1000,"selected":1},{"name":"final_volume","size":1000,"selected":1},{"name":"rate","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+},{
+"name":"radiology.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"ADMITDATE","size":1000,"selected":1},{"name":"ADMIT.TIME","size":1000,"selected":1},{"name":"DISCHARGE.DATE","size":1000,"selected":1},{"name":"DISCHARGE.TIME","size":1000,"selected":1},{"name":"pat_num_ord","size":1000,"selected":1},{"name":"pmp","size":1000,"selected":1},{"name":"start_date","size":1000,"selected":1},{"name":"start_time","size":1000,"selected":1},{"name":"stop_date","size":1000,"selected":1},{"name":"stop_time","size":1000,"selected":1},{"name":"drug_code","size":1000,"selected":1},{"name":"generic_name","size":1000,"selected":1},{"name":"ndc","size":1000,"selected":1},{"name":"din","size":1000,"selected":1},{"name":"Hospital_Specific_Drug_Code","size":1000,"selected":1},{"name":"doseAmount","size":1000,"selected":1},{"name":"doseUnit","size":1000,"selected":1},{"name":"route","size":1000,"selected":1},{"name":"ord_frequency","size":1000,"selected":1},{"name":"component_type","size":1000,"selected":1},{"name":"Addl_sig","size":1000,"selected":1},{"name":"final_volume","size":1000,"selected":1},{"name":"rate","size":1000,"selected":1},{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1}]
+}
+	
+	
+	
+ ]
+  },
+  
+  
+  
+  {
+   "name": "Administrative",
+   "children": [
+    
+	
+	
+	{
+"name":"smh.adm.nophi.csv",
+"children":[{"name":"EncID.new","size":1000,"selected":1},{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"City","size":1000,"selected":0},{"name":"Province","size":1000,"selected":0},{"name":"Country","size":1000,"selected":0},{"name":"Admitting.Service","size":1000,"selected":1},{"name":"Discharging.Service","size":1000,"selected":0},{"name":"Language","size":1000,"selected":1},{"name":"Total.Direct.Cost","size":1000,"selected":0},{"name":"Total.Indirect.Cost","size":1000,"selected":0},{"name":"Total.Cost","size":1000,"selected":0},{"name":"Special.Care.Unit.Death.Indicator","size":1000,"selected":0},{"name":"Glasgow.Coma.Scale","size":1000,"selected":0},{"name":"Hash","size":1000,"selected":0},{"name":"Discharging.Code","size":1000,"selected":0},{"name":"Admitting.Code","size":1000,"selected":0}]
+},{
+"name":"smh.er.nophi.csv",
+"children":[{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"Institution.Number","size":1000,"selected":0},{"name":"Institution.From","size":1000,"selected":0},{"name":"Institution.To","size":1000,"selected":0},{"name":"Admit.via.Ambulance","size":1000,"selected":0},{"name":"Ambulance.Arrival.Date","size":1000,"selected":0},{"name":"Ambulance.Arrival.Time","size":1000,"selected":0},{"name":"Presenting.Complaint.List","size":1000,"selected":0},{"name":"Triage.Date","size":1000,"selected":0},{"name":"Triage.Time","size":1000,"selected":0},{"name":"Triage.Level","size":1000,"selected":1},{"name":"Registration.Date","size":1000,"selected":0},{"name":"Registration.Time","size":1000,"selected":0},{"name":"Date.of.Physician.Initial.Assessment","size":1000,"selected":1},{"name":"Time.of.Physician.Initial.Assessment","size":1000,"selected":1},{"name":"Disposition.Date","size":1000,"selected":1},{"name":"Disposition.Time","size":1000,"selected":1},{"name":"Date.Left.ER","size":1000,"selected":1},{"name":"Time.Left.ER","size":1000,"selected":1},{"name":"Visit.Disposition","size":1000,"selected":0},{"name":"Blood.Transfusion.in.ED","size":1000,"selected":0},{"name":"RBC.Y.N","size":1000,"selected":0},{"name":"Plt.Y.N","size":1000,"selected":0},{"name":"Plasma.Y.N","size":1000,"selected":0},{"name":"Albumin.Y.N","size":1000,"selected":0},{"name":"Other.Y.N","size":1000,"selected":0},{"name":"Auto.Transfusion.Y.N","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.er_cacs.nophi.csv",
+"children":[{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"Methodology.Year","size":1000,"selected":0},{"name":"CACS","size":1000,"selected":0},{"name":"CACS.WT","size":1000,"selected":0},{"name":"CACS.WT.ON","size":1000,"selected":0},{"name":"MACCODE","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.er_consults.nophi.csv",
+"children":[{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"ER.Consult.Occurrence","size":1000,"selected":1},{"name":"ER.Consult.Service","size":1000,"selected":1},{"name":"ER.Consult.Date","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.er_diag.nophi.csv",
+"children":[{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"ER.Diagnosis.Code","size":1000,"selected":1},{"name":"ER.Diagnosis.Type","size":1000,"selected":1},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.er_int.nophi.csv",
+"children":[{"name":"NACRSRegistrationNumber","size":1000,"selected":0},{"name":"Occurrence.Code","size":1000,"selected":0},{"name":"Occurrence.Type","size":1000,"selected":0},{"name":"Interv.loc.attrib","size":1000,"selected":0},{"name":"Interv.status.attrib","size":1000,"selected":0},{"name":"Interv.extent.attrib","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_cmg.nophi.csv",
+"children":[{"name":"Methodology.Year","size":1000,"selected":0},{"name":"CMG","size":1000,"selected":1},{"name":"Diagnosis.For.CMG.Assignment","size":1000,"selected":0},{"name":"CMG.Intervention","size":1000,"selected":0},{"name":"Comorbidity.Level","size":1000,"selected":1},{"name":"RIW.Inpatient.Atypical.Indicator","size":1000,"selected":0},{"name":"RIW.15","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_dad.nophi.csv",
+"children":[{"name":"Admit.Date","size":1000,"selected":1},{"name":"Admit.Time","size":1000,"selected":1},{"name":"Discharge.Date","size":1000,"selected":1},{"name":"Discharge.Time","size":1000,"selected":1},{"name":"Admission.Category","size":1000,"selected":0},{"name":"Discharge.Disposition","size":1000,"selected":1},{"name":"Responsibility.for.Payment","size":1000,"selected":0},{"name":"Province.Territory.Issuing.Health.Care.Number","size":1000,"selected":0},{"name":"Number.of.ALC.Days","size":1000,"selected":0},{"name":"InstitutionFrom","size":1000,"selected":0},{"name":"InstitutionFrom.Type","size":1000,"selected":0},{"name":"InstitutionTo","size":1000,"selected":0},{"name":"InstitutionTo.Type","size":1000,"selected":0},{"name":"Readmission","size":1000,"selected":1},{"name":"Residence.Code","size":1000,"selected":0},{"name":"Gender","size":1000,"selected":1},{"name":"Age","size":1000,"selected":1},{"name":"MostResponsible.DocterCode","size":1000,"selected":1},{"name":"MostResponsible.DocterService","size":1000,"selected":1},{"name":"Entry.Code","size":1000,"selected":0},{"name":"Blood.Transfusion.Indicator_DAD","size":1000,"selected":0},{"name":"RBC","size":1000,"selected":0},{"name":"Plt","size":1000,"selected":0},{"name":"Plasma","size":1000,"selected":0},{"name":"Albumin","size":1000,"selected":0},{"name":"Other","size":1000,"selected":0},{"name":"Auto.Transfusion","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_diag.nophi.csv",
+"children":[{"name":"Diagnosis.Code","size":1000,"selected":1},{"name":"Diagnosis.Cluster","size":1000,"selected":0},{"name":"Diagnosis.Type","size":1000,"selected":1},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_endo.nophi.csv",
+"children":[{"name":"ProcedureDate","size":1000,"selected":0},{"name":"ProcedureTime","size":1000,"selected":0},{"name":"Procedure.Code","size":1000,"selected":0},{"name":"Procedure.Name","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_hig.nophi.csv",
+"children":[{"name":"Methodology.Year","size":1000,"selected":0},{"name":"HIG","size":1000,"selected":0},{"name":"HIG.Weight.15","size":1000,"selected":0},{"name":"HIG.Homecare.Flag","size":1000,"selected":0},{"name":"HIG.SCU.Flag","size":1000,"selected":0},{"name":"FI.Cardioversion.Flag","size":1000,"selected":0},{"name":"FI.Cell.Saver.Flag","size":1000,"selected":0},{"name":"FI.Chemotherapy.Flag","size":1000,"selected":0},{"name":"FI.Dialysis.Flag","size":1000,"selected":0},{"name":"FI.Feeding.Tube.Flag","size":1000,"selected":0},{"name":"FI.Heart.Resuscitation.Flag","size":1000,"selected":0},{"name":"FI.Invasive.Ventilation.GE96.Flag","size":1000,"selected":0},{"name":"FI.Invasive.Ventilation.LT96.Flag","size":1000,"selected":0},{"name":"FI.Paracentesis.Flag","size":1000,"selected":0},{"name":"FI.Parenteral.Nutrition.Flag","size":1000,"selected":0},{"name":"FI.Pleurocentesis.Flag","size":1000,"selected":0},{"name":"FI.Radiotherapy.Flag","size":1000,"selected":0},{"name":"FI.Tracheostomy.Flag","size":1000,"selected":0},{"name":"FI.Vascular.Access.Device.Flag","size":1000,"selected":0},{"name":"HIG.Atypical.Code","size":1000,"selected":0},{"name":"HIG.ELOS.15","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_int.nophi.csv",
+"children":[{"name":"Intervention.Occurrence","size":1000,"selected":0},{"name":"Intervention.Code","size":1000,"selected":0},{"name":"Intervention.Episode.Start.Date","size":1000,"selected":0},{"name":"Intervention.Episode.Start.Time","size":1000,"selected":0},{"name":"Procedure.Location","size":1000,"selected":0},{"name":"Intervention.Location.Attribute","size":1000,"selected":0},{"name":"Intervention.Status.Attribute","size":1000,"selected":0},{"name":"Intervention.Extent.Attribute","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_scu.nophi.csv",
+"children":[{"name":"Unit","size":1000,"selected":0},{"name":"SCU.Admit.Date","size":1000,"selected":0},{"name":"SCU.Admit.Time","size":1000,"selected":0},{"name":"SCU.Discharge.Date","size":1000,"selected":0},{"name":"SCU.Discharge.Time","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0}]
+},{
+"name":"smh.ip_xfer.nophi.csv",
+"children":[{"name":"Unit","size":1000,"selected":1},{"name":"Room.Bed","size":1000,"selected":0},{"name":"Date.Check.in","size":1000,"selected":1},{"name":"Time.Check.in","size":1000,"selected":1},{"name":"Date.Check.out","size":1000,"selected":0},{"name":"Time.Check.out","size":1000,"selected":0},{"name":"EncID.new","size":1000,"selected":0},{"name":"Unit.Code","size":1000,"selected":0}]
+}
+	
+  
+   ]
+  }
+ ]
+}

@@ -1,3 +1,6 @@
+library(lubridate)
+
+
 # administrative tables
 #
 #[1] "smh.adm.nophi.csv"         "smh.er.nophi.csv"          "smh.er_cacs.nophi.csv"    
@@ -78,3 +81,17 @@ for (i in 1:length(fileList)){
 
 # 'testTables1_1.csv' is to be used by testTables.r to generate json file
 write.csv(clinicalDF, file='testTables2_1.csv', row.names = F)
+
+
+################################################################
+## Dat/Time conversion
+################################################################
+zeroSecond <- ":00"
+thetime <- "11:00"
+thetime <- paste0(thetime, zeroSecond)
+thetime <- hms(thetime)
+hour(thetime)  #11
+
+theday <- "2014-11-03"
+theday <- ymd(theday)
+
