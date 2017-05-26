@@ -82,10 +82,10 @@ length(unique(ALB$EncID.new))
 #[1] 10166 unique patient IDs
 
 
-ALB %>% mutate(reading = case_when(
-                                 .$Result.Value >  50 ~ "ABOVE",
-                                 .$Result.Value <  35 ~ "UNDER",
-                                 TRUE ~ "NORMAL"))
+#ALB %>% mutate(reading = case_when(
+#                                 .$Result.Value >  50 ~ "ABOVE",
+#                                 .$Result.Value <  35 ~ "UNDER",
+#                                 TRUE ~ "NORMAL"))
 
 
 # how many different types of 'Test.ID' in the table
@@ -93,7 +93,7 @@ testDF <- data.frame(table(ALB$Test.ID))
 colnames(testDF) <- c("Test.ID", "Count")
 testDF
 
-
+#####################################
 
 id_occurCount <- ALB %>% group_by(EncID.new) %>% 
   summarise(ALB_Count=n(), Mean=round(mean(Result.Value),1)) %>% 
@@ -126,13 +126,12 @@ calcLOS <- function(startDate, startTime, endDate, endTime){
 getTestData <- function(fileName){
   filePath <- paste0("Data/Clinical/",fileName)
   target <- read.csv(filePath, header=T, stringsAsFactors=F)
-  target <- target %>% select(-c(Site, Test.Item))
+  #target <- target %>% select(-c(Site, Test.Item))
   
   # how many different types of 'Test.ID' in the table
   testDF <- data.frame(table(target$Test.ID))
   colnames(testDF) <- c("Test.ID", "Count")
   testDF
-  
   
   
   id_occurCount <- target %>% group_by(EncID.new) %>% 
@@ -160,7 +159,9 @@ doTest <- function(){
              "k", "sodium", "TNI", "IWBCR"
   )
   
-  for (i in 1:length(thenames)){
+  
+  #for (i in 1:length(thenames)){
+  for (i in 1:14){
     thefile <- thenames[i]
     codeName <- codes[i]
     testCount <- paste0(codeName, "_Count") 
