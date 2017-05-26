@@ -1,0 +1,199 @@
+---
+title: "GEMINI - Data Exploration"
+author: "Jennifer Yueh"
+date: "May 25, 2017"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+
+```{r}
+library(data.table)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(Hmisc)
+library(psych)
+library(GGally)
+library(knitr)
+
+```
+
+
+```{r}
+calcLOS <- function(startDate, startTime, endDate, endTime){
+  t1 <- paste(startDate, startTime)
+  t2 <- paste(endDate, startTime)
+  tt.interval <- t1 %--% t2
+  time.duration <- as.duration(tt.interval)
+  return (as.numeric(time.duration, "hours"))
+}
+
+
+getTestData <- function(fileName){
+  filePath <- paste0("Data/Clinical/",fileName)
+  target <- read.csv(filePath, header=T, stringsAsFactors=F)
+  target <- target %>% select(-c(Site, Test.Item))
+  
+  # how many different types of 'Test.ID' in 'albumin' table
+  testDF <- data.frame(table(target$Test.ID))
+  #colnames(testDF) <- c("Test.ID", "Count")
+  head(testDF)
+  
+  
+  id_occurCount <- target %>% group_by(EncID.new) %>% 
+    summarise(ID_Count=n(), Mean=round(mean(Result.Value),1)) %>% 
+    arrange(desc(ID_Count))
+  
+  target_joined <- left_join(target, id_occurCount, by='EncID.new')
+  
+  result <- target_joined %>% select(EncID.new, Mean, ID_Count, Admit.Date, Admit.Time, Discharge.Date, Discharge.Time) %>%
+    rename(target.code = Mean) %>%
+    select(EncID.new, Admit.Date, Admit.Time, Discharge.Date, Discharge.Time, target.code, ID_Count) %>%
+    distinct()
+  
+  return (result)
+} 
+
+
+doTest <- function(){
+  thenames <- list.files("./Data/Clinical")
+  thenames <- thenames[2:16]  # BE VERY very CAREFUL HERE
+  codes <- c("ALP", "ALT", "AST", 
+             "CA", "CR", "GLUF", "GLUR",
+             "HGB", "VLACT", "MCV", "PLT",
+             "k", "sodium", "TNI", "IWBCR"
+  )
+  
+  for (i in 1:length(thenames)){
+    thefile <- thenames[i]
+    codeName <- codes[i]
+    testCount <- paste0(codeName, "_Count") 
+    
+    tmp <- getTestData(thefile)
+    
+    colnames(tmp)[which(colnames(tmp) == "target.code")] <- codeName
+    colnames(tmp)[which(colnames(tmp) == "ID_Count")] <- testCount
+    
+    combined <- full_join(combined, tmp, by = c("EncID.new", "Admit.Date", "Admit.Time", "Discharge.Date", "Discharge.Time"))
+  }
+  
+  return (combined)
+}
+```
+
+
+
+
+
+### load in 'albumin' test data
+
+```{r}
+ALB <- read.csv("Data/Clinical/lab.albumin.csv", header=T, stringsAsFactors=F)
+ALB <- ALB %>% select(-c(Site, Test.Item)) # 10750    11 (10750 observations)
+length(unique(ALB$EncID.new))
+```
+
+### how many different types of 'Test.ID' in the table
+
+```{r}
+testDF <- data.frame(table(ALB$Test.ID))
+colnames(testDF) <- c("Test.ID", "Count")
+testDF
+```
+
+### number of the 'albumin' tests having been done
+
+```{r}
+id_occurCount <- ALB %>% group_by(EncID.new) %>% 
+  summarise(ALB_Count=n(), Mean=round(mean(Result.Value),1)) %>% 
+  arrange(desc(ALB_Count)) 
+head(id_occurCount, 10) #show 10 patients only
+```
+
+
+```{r}
+ALB_joined <- left_join(ALB, id_occurCount, by='EncID.new')
+
+albumin <- ALB_joined %>% select(EncID.new, Mean, ALB_Count, Admit.Date, Admit.Time, Discharge.Date, Discharge.Time) %>%
+          rename(ALB = Mean) %>%
+          select(EncID.new, Admit.Date, Admit.Time, Discharge.Date, Discharge.Time, ALB, ALB_Count) %>%
+                    distinct()
+
+combined <- albumin # 10166     7
+```
+
+
+### display randomly selected observations in the dataset here
+
+```{r}
+testSet <- doTest() 
+testSet$LOS <- calcLOS(testSet$Admit.Date, testSet$Admit.Time, testSet$Discharge.Date, testSet$Discharge.Time)
+thesample <- sample_n(testSet,5) 
+
+df <- thesample %>% select(1,6,8,10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38)
+kable(df)
+
+df_count <- thesample %>% select(1,7,9,11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 38)
+kable(df_count)
+```
+
+
+
+### number of missing tests per patient
+
+
+```{r}
+smallSet <- testSet %>% select(EncID.new, ALB, ALP, ALT, AST, CA, CR, GLUF, 
+                               GLUR, HGB, VLACT, MCV, PLT, k, sodium, TNI, IWBCR, LOS)
+```
+
+
+
+```{r}
+smallSet$NA_count <- rowSums(is.na(smallSet))
+kable(head(smallSet))
+
+ggplot(data=smallSet, aes(x=NA_count)) + geom_histogram(bins=25, color="lightblue") +
+  scale_x_continuous(breaks = seq(0,16,2)) +
+    scale_y_continuous(breaks = seq(0,3000,500)) + 
+    xlab("Number of missing tests") +
+    ylab("Number of patients")
+```
+
+
+### percentage of patients have missed (have not taken) a particular test
+
+
+```{r}
+smallSetTestOnly <- smallSet %>% select(-c(EncID.new, LOS, NA_count))
+NA_count_PerTest <- smallSetTestOnly %>% 
+          summarise_all(funs(Total = sum(is.na(.))))
+
+md <- melt(NA_count_PerTest)
+md$percent <- round((md$value / nrow(smallSetTestOnly)) * 100, 1)
+names(md) <- c("missing_Test.ID", "missing_Count", "Percent")
+md$"missing_Test.ID" <- gsub("_Total", "", md$"missing_Test.ID")
+md %>% arrange(desc(Percent))
+```
+
+
+### long_stay vs short_stay
+
+
+```{r}
+smallSet$typeStay <- if_else(smallSet$LOS <= 72, "short_stay", "long_stay")
+smallSetTally <- smallSet %>% count(typeStay) %>% rename(Count = n)
+ggplot(data=smallSetTally, aes(x=typeStay, y=Count)) + 
+  geom_bar(stat="identity", fill='lightgrey', colour='darkgrey') + 
+  scale_y_continuous(breaks = seq(0,10000,1000)) +
+  xlab("") + ylab("Number of patients")
+```
